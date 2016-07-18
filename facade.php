@@ -49,8 +49,7 @@ class Facade{
 	function now(){
 		$l = $this->_light->_isOpen;
 		$t = $this->_tv->_isOpen;
-		echo 'light is ',$l?"on <br>":"off <br>";
-		echo 'tv is ',$t?"on <br>":"off <br>";
+		echo 'light is ',$l?"on <br>":"off <br>",'tv is ',$t?"on <br>":"off <br>";
 	}
 }
 $facade = new Facade();
